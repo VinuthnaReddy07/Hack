@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Waste Sorting and Reward System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Smart Waste Sorting and Reward System</h1>
+    </header>
+    <main>
+        <section id="upload-section">
+            <h2>Upload Waste Item</h2>
+            <input type="file" id="waste-image" accept="image/*">
+            <button id="upload-button">Identify Waste</button>
+            <div id="result"></div>
+        </section>
+        
+        <section id="locations-section">
+            <h2>Nearby Recycling Locations</h2>
+            <input type="text" id="location-input" placeholder="Enter your location">
+            <button id="find-locations-button">Find Locations</button>
+            <ul id="locations-list"></ul>
+        </section>
+        
+        <section id="rewards-section">
+            <h2>Your Rewards</h2>
+            <div id="rewards-summary">
+                <p>Total Points: <span id="total-points">0</span></p>
+                <p>Redeemable Rewards: <span id="rewards-list"></span></p>
+            </div>
+        </section>
+    </main>
+    <script src="scripts.js"></script>
+</body>
+</html>
